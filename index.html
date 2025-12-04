@@ -5,16 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mi primer sitio Web con PaaS</title>
 
-  <!-- Paleta moderna: teal + morado suave + gris piedra -->
   <style>
     :root {
       --bg1: #eaf0ff;
       --bg2: #f4f7fb;
       --card: #ffffffcc;
-      --accent: #3b82f6;     /* Azul vivo moderno */
-      --accent2: #6366f1;    /* Indigo suave */
-      --muted: #64748b;      /* Gris piedra */
-      --text: #1e293b;       /* Gris oscuro elegante */
+      --accent: #3b82f6;
+      --accent2: #6366f1;
+      --muted: #64748b;
+      --text: #1e293b;
       --radius: 16px;
     }
 
@@ -25,7 +24,6 @@
       color: var(--text);
     }
 
-    /* Fondo degradado moderno */
     body {
       display: flex;
       align-items: center;
@@ -34,7 +32,6 @@
       padding: 2rem;
     }
 
-    /* Card estilo glass suave */
     .container {
       max-width: 900px;
       background: var(--card);
@@ -47,11 +44,9 @@
       animation: fadeIn 0.6s ease;
     }
 
-    /* Títulos más modernos */
     h1 {
       margin: 0;
       font-size: 2.4rem;
-      line-height: 1.1;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
       -webkit-background-clip: text;
       color: transparent;
@@ -63,6 +58,16 @@
       font-size: 1.15rem;
       color: var(--muted);
       font-weight: 600;
+    }
+
+    /* Imagen moderna */
+    .hero-img {
+      width: 100%;
+      max-width: 450px;
+      border-radius: var(--radius);
+      margin: 1.5rem auto;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+      display: block;
     }
 
     p {
@@ -78,7 +83,6 @@
       font-size: .9rem;
     }
 
-    /* Badge moderno */
     .badge {
       display: inline-block;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
@@ -91,7 +95,6 @@
       box-shadow: 0 4px 14px rgba(59,130,246,.35);
     }
 
-    /* Animación suave */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(12px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -101,8 +104,14 @@
 
 <body>
   <main class="container" role="main" aria-labelledby="main-title">
-    <h1 id="main-title">Mi primer sitio Web con PaaS de Patty Castro Carlo</h1>
+    
+    <h1 id="main-title">Mi primer sitio Web con PaaS de Patty Castro</h1>
     <h2>Maestría en Inteligencia Artificial, Machine Learning y Data Science</h2>
+
+    <!-- Imagen pública desde Unsplash -->
+    <img class="hero-img"
+         src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200"
+         alt="Representación de inteligencia artificial y tecnología">
 
     <div class="badge">Demostración práctica: GitHub + Vercel</div>
 
