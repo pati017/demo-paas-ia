@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mi primer sitio Web con PaaS</title>
+
+  <!-- Paleta moderna: teal + morado suave + gris piedra -->
+  <style>
+    :root {
+      --bg1: #eaf0ff;
+      --bg2: #f4f7fb;
+      --card: #ffffffcc;
+      --accent: #3b82f6;     /* Azul vivo moderno */
+      --accent2: #6366f1;    /* Indigo suave */
+      --muted: #64748b;      /* Gris piedra */
+      --text: #1e293b;       /* Gris oscuro elegante */
+      --radius: 16px;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial;
+      color: var(--text);
+    }
+
+    /* Fondo degradado moderno */
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--bg1), var(--bg2));
+      padding: 2rem;
+    }
+
+    /* Card estilo glass suave */
+    .container {
+      max-width: 900px;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      border-radius: var(--radius);
+      border: 1px solid rgba(255,255,255,0.35);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+      padding: 3rem;
+      text-align: center;
+      animation: fadeIn 0.6s ease;
+    }
+
+    /* Títulos más modernos */
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      line-height: 1.1;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      color: transparent;
+      font-weight: 800;
+    }
+
+    h2 {
+      margin: .7rem 0 1.5rem;
+      font-size: 1.15rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin: 0 auto;
+      max-width: 70ch;
+      line-height: 1.7;
+    }
+
+    footer {
+      margin-top: 1.7rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    /* Badge moderno */
+    .badge {
+      display: inline-block;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      color: #fff;
+      padding: .35rem .75rem;
+      border-radius: 999px;
+      font-size: .85rem;
+      font-weight: 600;
+      margin-top: .9rem;
+      box-shadow: 0 4px 14px rgba(59,130,246,.35);
+    }
+
+    /* Animación suave */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container" role="main" aria-labelledby="main-title">
+    <h1 id="main-title">Mi primer sitio Web con PaaS de Patty Castro Carlo</h1>
+    <h2>Maestría en Inteligencia Artificial, Machine Learning y Data Science</h2>
+
+    <div class="badge">Demostración práctica: GitHub + Vercel</div>
+
+    <p>
+      Bienvenido al portal de demostración donde exploramos el uso de plataformas 
+      <strong>PaaS (Platform as a Service)</strong> para el despliegue rápido de 
+      aplicaciones web y prototipos en proyectos de Inteligencia Artificial,
+      Machine Learning y Data Science. Este sitio muestra cómo un repositorio en GitHub
+      puede integrarse con Vercel para publicar contenido estático de forma automática
+      y sin gestionar servidores.
+    </p>
+
+    <footer>
+      Actividad práctica — Maestría en Inteligencia Artificial, Machine Learning y Data Science
+    </footer>
+  </main>
+</body>
+</html>
